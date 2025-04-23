@@ -1,0 +1,113 @@
+/* Base animation properties with improved timing functions */
+.fade-in-element {
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.slide-in-left {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.slide-in-right {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.scale-in {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+/* Refined visible state with smoother transitions */
+.visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced lazy loading animation */
+img[loading="lazy"] {
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(5px);
+}
+
+img[loading="lazy"].visible {
+    filter: blur(0);
+}
+
+/* Refined section-specific animations */
+#vision .md\:w-1\/2 {
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+
+#programs .group {
+    transition-delay: calc(var(--animation-order, 0) * 0.15s);
+    transition-duration: 0.8s;
+}
+
+#goals .group {
+    transition-delay: calc(var(--animation-order, 0) * 0.2s);
+    transition-duration: 0.8s;
+}
+
+/* Enhanced card animations */
+.card {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Refined section header animations */
+.section-header {
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+}
+
+/* Smoother scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/* Stagger animation for lists */
+.stagger-animation > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stagger-animation > *.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-animation > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-animation > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-animation > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-animation > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-animation > *:nth-child(5) { transition-delay: 0.5s; }
+
+/* Accessibility considerations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .stagger-animation > * {
+        opacity: 1;
+        transform: none;
+    }
+}
