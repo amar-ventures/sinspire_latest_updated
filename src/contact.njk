@@ -1,0 +1,110 @@
+{% include "header.njk" %}
+
+
+<!-- Contact Hero Section -->
+<header class="pt-32 pb-16 px-6 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Get in Touch</span>
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+            Have questions or want to explore opportunities? We're here to help. Reach out to us through any of the channels below.
+        </p>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <input type="text" id="subject" name="subject" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" 
+                        class="w-full px-8 py-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <!-- Office Location -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Office Location</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot w-5 mt-1 text-blue-500"></i>
+                            <span>Village Office Road Kuttiadi<br>Calicut, Kerala<br>India - 673508</span>
+                        </p>
+                        <div class="h-[200px] rounded-xl overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps/embed/v1/place?q=sinspire+global+ventures&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                class="w-full h-full"
+                                style="border:0;"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone w-5 text-blue-500"></i>
+                            <a href="tel:+918330090850" class="hover:text-blue-500 transition">+91 8330090850</a>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope w-5 text-blue-500"></i>
+                            <a href="mailto:sigvpl@sinspire.in" class="hover:text-blue-500 transition">sigvpl@sinspire.in</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-500 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-pink-500 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}

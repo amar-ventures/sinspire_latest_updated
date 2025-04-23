@@ -1,0 +1,33 @@
+{% include "header.njk" %}
+
+<!-- Coming Soon Hero Section -->
+<section class="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto text-center">
+        <!-- Decorative Element -->
+        <div class="w-20 h-20 mx-auto mb-8 relative">
+            <div class="absolute inset-0 bg-blue-500/20 rounded-2xl animate-pulse"></div>
+            <div class="relative w-full h-full flex items-center justify-center">
+                <i class="fa-solid fa-newspaper text-4xl text-blue-500"></i>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                Blog Coming Soon
+            </span>
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+            We're working on bringing you insightful articles and updates. Stay tuned for our upcoming blog section.
+        </p>
+
+        <!-- CTA Button -->
+        <a href="/" 
+           class="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition transform hover:scale-105 shadow-lg">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </a>
+    </div>
+</section>
+
+{% include "footer.njk" %}

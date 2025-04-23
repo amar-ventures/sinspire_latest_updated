@@ -1,0 +1,125 @@
+{% include "header.njk" %}
+
+<!-- Team Hero Section -->
+<section class="pt-32 pb-16 px-6 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Meet Our Team</span>
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+            Get to know the dedicated professionals working to make a difference through innovation and sustainable development.
+        </p>
+    </div>
+</section>
+
+<!-- Leadership Team Section -->
+<section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            Leadership Team
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Leader 1 -->
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="/images/team/leader1.jpg" alt="Team Leader" 
+                         class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex gap-4 mb-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-400 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Mohammed Rizwan</h3>
+                <p class="text-blue-500 font-medium mb-3">Chief Executive Officer</p>
+                <p class="text-gray-600">Leading strategic initiatives and organizational development.</p>
+            </div>
+
+            <!-- Leader 2 -->
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="/images/team/leader2.jpg" alt="Team Leader" 
+                         class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex gap-4 mb-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-400 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Dilshad Rahman</h3>
+                <p class="text-blue-500 font-medium mb-3">Chief Technology Officer</p>
+                <p class="text-gray-600">Driving technological innovation and digital transformation.</p>
+            </div>
+
+            <!-- Leader 3 -->
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="/images/team/leader3.jpg" alt="Team Leader" 
+                         class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex gap-4 mb-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-blue-400 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Fathima Sahla</h3>
+                <p class="text-blue-500 font-medium mb-3">Chief Operations Officer</p>
+                <p class="text-gray-600">Managing operations and program implementation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Department Heads Section -->
+<section class="py-16 px-6 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            Department Heads
+        </h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Team Member Card Template -->
+            {% for member in [
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Priya Menon', role: 'HR Director', image: 'member2.jpg'},
+                {name: 'Abdul Hassan', role: 'Finance Head', image: 'member3.jpg'},
+                {name: 'Lakshmi Nair', role: 'Program Director', image: 'member4.jpg'},
+                {name: 'Rahul Dev', role: 'Marketing Head', image: 'member5.jpg'},
+                {name: 'Anjali Singh', role: 'Community Relations', image: 'member6.jpg'},
+                {name: 'Thomas John', role: 'Research Head', image: 'member7.jpg'},
+                {name: 'Zainab Ali', role: 'Project Manager', image: 'member8.jpg'}
+            ] %}
+            <div class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="relative mb-4 rounded-xl overflow-hidden">
+                    <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" 
+                         class="w-full aspect-square object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <h3 class="text-lg font-bold mb-1">{{ member.name }}</h3>
+                <p class="text-blue-500 text-sm">{{ member.role }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}
