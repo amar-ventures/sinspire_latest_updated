@@ -6,6 +6,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addWatchTarget("./src/");
 
+  // Copy robots.txt and sitemap.xml to the output directory
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
+
   return {
     pathPrefix: "/",
     dir: {

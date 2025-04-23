@@ -1,36 +1,27 @@
+{% set assetsPath = "" %}
+{% if page.url and page.url != "/" %}
+  {% set assetsPath = "../" %}
+{% endif %}
 
 
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Sinspire">
-    <meta name="description"
-        content="Sinspire aims to empower sectors like education, employment, social welfare, arts, health, and national development through impactful programs. We work towards improving lives and building a better future.">
-    <meta name="keywords"
-        content="sinspire, sinspire global ventures, sinspire kuttiadi,sinspire adishesha,adishesha,education, employment, social welfare, health, national development, arts, Sinspire programs">
-    <!-- <meta name="theme-color" content="#4CAF50"> -->
-    <link rel="icon" href="images/logo.png" type="image/png">
 
-    <!-- Open Graph (OG) Tags for Social Media Sharing -->
-    <meta property="og:title" content="Sinspire - Empowering Sectors for a Better Future">
-    <meta property="og:description"
-        content="Sinspire aims to empower various sectors such as education, employment, social welfare, health, and national development. Join us in making a lasting impact.">
-    <meta property="og:image" content="https://www.sinspire.in/images/logo.png">
-    <meta property="og:url" content="https://www.sinspire.in/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Sinspire">
+
+
+    {% include "seo.njk" %}
+    
+
+
+    <link rel="icon" href="{{assetsPath}}assets/images/logo.png" type="image/png">
+
     <title>S-Inspire Global Ventures</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{assetsPath}}assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{assetsPath}}assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{assetsPath}}assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{assetsPath}}assets/favicon/site.webmanifest">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
@@ -43,13 +34,6 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/components.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-
-    <link rel="stylesheet" href="css/mediaquery.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,65 +107,65 @@
 <body class="bg-gradient-to-br from-gray-50 to-blue-50 text-gray-900">
 
 <!-- Navbar -->
-<nav class="bg-white/80 backdrop-blur-md shadow-lg py-4 px-6 fixed w-full top-0 z-50">
+<nav class="bg-white/100 shadow-md py-4 px-6 fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo with asset path -->
         <div class="flex items-center gap-3">
-            <img src="images/logo.png" alt="Sinspire logo" class="h-12">
+            <img src="{% if page.url == '/' %}./{% else %}{{ assetsPath }}{% endif %}assets/images/logo.png" alt="Sinspire logo" class="h-12">
             <div>
                 <h1 class="text-xl md:text-2xl font-bold text-blue-600">S-Inspire Global</h1>
                 <p class="text-sm text-gray-600">Ventures Private Limited</p>
             </div>
         </div>
+
+        <!-- Desktop Navigation -->
         <ul class="hidden md:flex space-x-8 items-center">
-            <li><a href="/" class="hover:text-blue-500 transition">Home</a></li>
-            <li><a href="/about" class="hover:text-blue-500 transition">About us</a></li>
-            <li><a href="/team" class="hover:text-blue-500 transition">Our team</a></li>
-            <li><a href="/careers" class="hover:text-blue-500 transition">Careers</a></li>
-            <li><a href="/blog" class="hover:text-blue-500 transition">Blog</a></li>
-            <li><a href="/contact" class="px-6 py-2.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition transform hover:scale-105">Contact Us</a></li>
+            <li><a href="{% if page.url == '/' %}./{% else %}{{ assetsPath }}{% endif %}" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="{{ assetsPath }}about/" class="hover:text-blue-500 transition">About us</a></li>
+            <li><a href="{{ assetsPath }}team/" class="hover:text-blue-500 transition">Our team</a></li>
+            <li><a href="{{ assetsPath }}careers/" class="hover:text-blue-500 transition">Careers</a></li>
+            <li><a href="{{ assetsPath }}blog/" class="hover:text-blue-500 transition">Blog</a></li>
+            <li><a href="{{ assetsPath }}contact/" class="px-6 py-2.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition transform hover:scale-105">Contact Us</a></li>
         </ul>
+        
+        <!-- Mobile menu toggle remains the same -->
         <button class="md:hidden" onclick="toggleMobileMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16" />
             </svg>
         </button>
     </div>
-    <!-- Mobile menu -->
+
+    <!-- Mobile menu with asset paths -->
     <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-6">
             <ul class="flex flex-col space-y-6 py-8">
                 <li>
-                    <a href="#home" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
+                    <a href="{% if page.url == '/' %}./{% else %}{{ assetsPath }}{% endif %}" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
                         <i class="fa-solid fa-house w-5"></i>
                         <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#testimonials" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
-                        <i class="fa-solid fa-quote-right w-5"></i>
-                        <span>Testimonials</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
+                    <a href="{{ assetsPath }}about/" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
                         <i class="fa-solid fa-users w-5"></i>
                         <span>About Us</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#careers" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
+                    <a href="{{ assetsPath }}careers/" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
                         <i class="fa-solid fa-briefcase w-5"></i>
                         <span>Careers</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#blog" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
+                    <a href="{{ assetsPath }}blog/" class="flex items-center gap-3 text-gray-600 hover:text-blue-500 transition">
                         <i class="fa-solid fa-blog w-5"></i>
                         <span>Blog</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" class="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+                    <a href="{{ assetsPath }}contact/" class="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
                         <i class="fa-solid fa-envelope"></i>
                         <span>Contact Us</span>
                     </a>
@@ -190,4 +174,6 @@
         </div>
     </div>
 </nav>
+</body>
+</html>
 

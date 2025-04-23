@@ -1,5 +1,9 @@
 {% include "header.njk" %}
 
+
+
+
+
 <!-- Team Hero Section -->
 <section class="pt-32 pb-16 px-6 bg-white">
     <div class="max-w-7xl mx-auto text-center">
@@ -22,7 +26,7 @@
             <!-- Leader 1 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="/images/team/leader1.jpg" alt="Team Leader" 
+                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -37,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Mohammed Rizwan</h3>
+                <h3 class="text-2xl font-bold mb-2">Shanoj P K </h3>
                 <p class="text-blue-500 font-medium mb-3">Chief Executive Officer</p>
                 <p class="text-gray-600">Leading strategic initiatives and organizational development.</p>
             </div>
@@ -45,7 +49,7 @@
             <!-- Leader 2 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="/images/team/leader2.jpg" alt="Team Leader" 
+                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -60,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Dilshad Rahman</h3>
+                <h3 class="text-2xl font-bold mb-2">Anju PK </h3>
                 <p class="text-blue-500 font-medium mb-3">Chief Technology Officer</p>
                 <p class="text-gray-600">Driving technological innovation and digital transformation.</p>
             </div>
@@ -68,7 +72,7 @@
             <!-- Leader 3 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="/images/team/leader3.jpg" alt="Team Leader" 
+                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -83,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Fathima Sahla</h3>
+                <h3 class="text-2xl font-bold mb-2">Sarath KJ</h3>
                 <p class="text-blue-500 font-medium mb-3">Chief Operations Officer</p>
                 <p class="text-gray-600">Managing operations and program implementation.</p>
             </div>
@@ -101,14 +105,15 @@
             <!-- Team Member Card Template -->
             {% for member in [
                 {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Priya Menon', role: 'HR Director', image: 'member2.jpg'},
-                {name: 'Abdul Hassan', role: 'Finance Head', image: 'member3.jpg'},
-                {name: 'Lakshmi Nair', role: 'Program Director', image: 'member4.jpg'},
-                {name: 'Rahul Dev', role: 'Marketing Head', image: 'member5.jpg'},
-                {name: 'Anjali Singh', role: 'Community Relations', image: 'member6.jpg'},
-                {name: 'Thomas John', role: 'Research Head', image: 'member7.jpg'},
-                {name: 'Zainab Ali', role: 'Project Manager', image: 'member8.jpg'}
-            ] %}
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'}
+              ]
+               %}
             <div class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div class="relative mb-4 rounded-xl overflow-hidden">
                     <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" 

@@ -1,0 +1,19 @@
+# www.sinspire.in robots.txt
+
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /team/
+Allow: /careers/
+Allow: /blog/
+Allow: /contact/
+
+# Sitemaps
+Sitemap: https://www.sinspire.in/sitemap.xml
+
+# Disallow
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*
