@@ -254,7 +254,7 @@
 
 
 <!-- Replace the existing header section -->
-<header class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
+<header class="min-h-screen flex items-center justify-center pt-24 px-4 sm:px-6 relative overflow-hidden">
   <!-- Background with overlay -->
   <div class="absolute inset-0 z-0">
       <img 
@@ -266,7 +266,7 @@
   </div>
 
   <!-- Content -->
-  <div class="max-w-7xl flex flex-col md:flex-row items-center w-full relative z-10 gap-16 md:gap-8">
+  <div class="max-w-7xl w-full flex flex-col md:flex-row items-center relative z-10 gap-8 md:gap-16">
       <div class="md:w-1/2 text-white text-center md:text-left">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
               <span class="block">Empowering</span>
@@ -280,23 +280,57 @@
               <a href="#vision" class="px-8 py-4 border-2 border-white hover:bg-white/10 rounded-full transition text-center">Learn More</a>
           </div>
       </div>
+
+      <!-- Right Side Content -->
+      <div class="md:w-1/2 relative">
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-4">
+              <!-- Stat Card 1 -->
+              <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                  <div class="text-4xl font-bold text-white mb-2">2+</div>
+                  <div class="text-blue-200">Young Leaders Trained</div>
+              </div>
+              
+              <!-- Stat Card 2 -->
+              <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                  <div class="text-4xl font-bold text-white mb-2">4+</div>
+                  <div class="text-blue-200">Global Partners</div>
+              </div>
+              
+              <!-- Stat Card 3 -->
+              <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                  <div class="text-4xl font-bold text-white mb-2">1</div>
+                  <div class="text-blue-200">Countries Reached</div>
+              </div>
+              
+              <!-- Stat Card 4 -->
+              <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                  <div class="text-4xl font-bold text-white mb-2">96%</div>
+                  <div class="text-blue-200">Success Rate</div>
+              </div>
+          </div>
+
+          <!-- Floating Elements for Visual Interest -->
+          <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-2xl"></div>
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-cyan-500/20 rounded-full blur-2xl"></div>
+      </div>
   </div>
 </header>
 
 <!-- Vision section -->
-<section id="vision" class="py-24 px-6 bg-white">
+<section id="vision" class="py-16 sm:py-24 px-4 sm:px-6 bg-white">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 Our Vision & Mission
             </h2>
-            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Building a brighter future through innovation and empowerment
             </p>
         </div>
 
         <!-- Vision & Mission Cards Container -->
-        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <div class="grid md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
             <!-- Vision Card -->
             <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
                 <div class="relative h-48 overflow-hidden">
@@ -353,7 +387,7 @@
         </div>
 
         <!-- Key Values -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
             
             <div class="text-center p-6 bg-blue-50 rounded-xl">
                 <i class="fa-solid fa-star text-2xl text-blue-500 mb-3"></i>
@@ -380,21 +414,21 @@
 </section>
 
 <!-- Sectors section -->
-<section id="sectors" class="py-24 px-6 bg-gray-50">
+<section id="sectors" class="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">Our Focus Areas</span>
-            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 Diverse Opportunities
             </h2>
-            <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Creating opportunities across multiple sectors, empowering young people with unique pathways for personal and professional growth
             </p>
         </div>
 
         <!-- Sectors Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             
             <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-56 overflow-hidden">
@@ -409,8 +443,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">Employment</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Creating meaningful job opportunities that align with young people&#39;s skills and interests. We focus on sustainable employment that fosters personal growth and societal progress.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -435,8 +469,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">Education</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Partnering with educational institutions to provide diverse learning opportunities, including academic courses, industrial training, and digital learning programs.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -461,8 +495,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">Arts and Culture</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Supporting artistic expression and cultural exchange through platforms that showcase talent and promote diverse cultural celebrations.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -487,8 +521,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">Social Development</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Dedicated to promoting equality and inclusivity through various social initiatives, including health, community development, and environmental conservation.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -513,8 +547,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">National Development</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Collaborating with government bodies on key initiatives such as technological innovation and rural support to drive national progress.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -539,8 +573,8 @@
                         <h3 class="text-2xl font-bold text-white mt-2">Health and Wealth</h3>
                     </div>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="p-4 sm:p-6">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Empowering individuals with resources and strategies for holistic growth, focusing on building thriving communities that prioritize well-being and sustainable success.
                     </p>
                     <div class="mt-6 flex items-center text-blue-600">
@@ -557,175 +591,265 @@
 </section>
 
 <!-- Programs Section -->
-<section id="programs" class="py-24 px-6 bg-gray-50">
+<section id="programs" class="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">Our Initiatives</span>
-            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            <h2 class="text-3xl sm:text-4xl mb-2 md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 Key Programs
             </h2>
-            <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Empowering through focused initiatives and sustainable programs that drive meaningful change
             </p>
         </div>
 
         <!-- Programs Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/youth-employment.jpg" 
-                         alt="Youth Employment Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            Career Growth
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Youth Employment Initiatives</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        Career Growth
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Youth Employment Initiatives
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         To bridge the gap between education and employment, we offers programs like internships, apprenticeships, and job placement services, providing practical experience and networking opportunities for career advancement.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/educational.jpg" 
-                         alt="Educational Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            Education
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Educational Engagements</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        Education
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Educational Engagements
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         By establishing partnerships with schools, colleges, and online learning platforms, S Inspire offers a variety of educational opportunities. This includes scholarships and grants.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/arts-culture.jpg" 
-                         alt="Arts and Culture Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            Culture
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Arts and Cultural Exchange</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        Culture
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Arts and Cultural Exchange
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         This initiative promotes cultural exchange and artistic collaboration. It provides young artists the opportunity to participate in international residencies, exhibitions, and performances.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/social-dev.jpg" 
-                         alt="Social Development Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            Community
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Social Development Initiatives</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        Community
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Social Development Initiatives
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         We are committed to social responsibility. It supports community development projects focused on health, environmental protection, and social upliftment.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/global-intern.jpg" 
-                         alt="Global Internship Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            International
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Global Internship Exchange</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        International
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Global Internship Exchange
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         This Program offers young individuals the opportunity to gain international experience, develop new skills, and expand their professional network while working on meaningful projects in different cultural settings.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div class="relative h-56 overflow-hidden">
-                    <img src="assets/images/agriculture.jpg" 
-                         alt="Agricultural Programs" 
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-white text-sm tracking-wider uppercase bg-blue-500/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                            Sustainability
-                        </span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Soil and Agriculture</h3>
+            <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <!-- Decorative gradient background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-50"></div>
+                
+                <!-- Content -->
+                <div class="relative p-8">
+                    <!-- Icon -->
+                    <div class="mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:scale-110 transition-transform duration-300">
+                            <i class=" text-2xl"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <p class="text-gray-600 leading-relaxed">
+                    
+                    <!-- Badge -->
+                    <span class="inline-block text-sm text-blue-600 font-semibold tracking-wider uppercase bg-blue-100 px-3 py-1 rounded-full mb-4">
+                        Sustainability
+                    </span>
+                    
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                        Soil and Agriculture
+                    </h3>
+                    
+                    <!-- Description -->
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         We are dedicated to promoting sustainable soil health and agricultural practices. By empowering communities with innovative solutions, we aim to nurture the earth and ensure a thriving future for farming and food security.
                     </p>
-                    <div class="mt-6 flex items-center text-blue-600">
-                        <span class="text-sm font-semibold">Explore Program</span>
+                    
+                    <!-- Action Link -->
+                    <div class="flex items-center text-blue-600 font-semibold">
+                        <span class="text-sm">Explore Program</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-bl-full"></div>
                 </div>
             </div>
             
@@ -734,21 +858,21 @@
 </section>
 
 <!-- Future Goals section -->
-<section id="goals" class="py-24 px-6 bg-gradient-to-br from-gray-50 to-blue-50">
+<section id="goals" class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-gray-50 to-blue-50">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="text-blue-600 font-semibold">Looking Ahead</span>
-            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 Our Future Goals
             </h2>
-            <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Charting our path towards innovation, sustainability, and global impact
             </p>
         </div>
 
         <!-- Goals Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             
             <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100/50">
                 <div class="flex items-start gap-6">
@@ -840,6 +964,68 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+</section>
+
+<!-- Careers Section -->
+<section id="careers" class="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">Join Our Team</span>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                Grow With Us
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Be part of our mission to shape the future. We're always looking for talented individuals to join our team
+            </p>
+        </div>
+
+        <!-- Career Benefits Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Culture -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-users text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Dynamic Culture</h3>
+                <p class="text-gray-600">Join a diverse team of innovators and thought leaders</p>
+            </div>
+
+            <!-- Growth -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-chart-line text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Career Growth</h3>
+                <p class="text-gray-600">Continuous learning and development opportunities</p>
+            </div>
+
+            <!-- Impact -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-lightbulb text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Make an Impact</h3>
+                <p class="text-gray-600">Work on projects that make a real difference</p>
+            </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 sm:p-12 text-center">
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+                Ready to Start Your Journey?
+            </h3>
+            <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                Explore our current opportunities and become part of our mission to empower the next generation
+            </p>
+            <a href="/careers" class="inline-flex items-center px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-blue-50 transition-colors duration-300">
+                View Open Positions
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </div>
 </section>
