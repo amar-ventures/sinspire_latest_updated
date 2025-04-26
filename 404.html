@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .error-code {
+            font-size: 120px;
+            color: #1E40AF; /* Darker blue */
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: 24px;
+            color: #1E40AF; /* Darker blue */
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .redirect-button {
+            padding: 12px 24px;
+            background-color: #1E40AF; /* Darker blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            border: 2px solid #1E40AF; /* Darker blue */
+        }
+
+        .redirect-button:hover {
+            background-color: #1E3A8A; /* Even darker blue for hover */
+            border-color: #1E3A8A;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(30, 64, 175, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-message {
+                font-size: 20px;
+            }
+
+            .redirect-button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <div class="error-message">
+            Oops! You are on the wrong page.
+            <br>
+            Please select one of our websites below:
+        </div>
+        <div class="buttons-container">
+            <a href="https://sinspire.in" class="redirect-button">sinspire.in</a>
+            <a href="https://education.sinspire.in" class="redirect-button">education.sinspire.in</a>
+            <a href="https://yoga.sinspire.in" class="redirect-button">yoga.sinspire.in</a>
+        </div>
+    </div>
+</body>
+</html>
