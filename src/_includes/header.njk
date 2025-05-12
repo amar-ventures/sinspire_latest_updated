@@ -134,11 +134,14 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Logo with asset path -->
         <div class="flex items-center gap-3">
-            <img src="{% if page.url == '/' %}./{% else %}{{ assetsPath }}{% endif %}assets/images/logo.png" alt="Sinspire logo" class="h-12">
-            <div>
-                <h1 class="text-xl md:text-2xl font-bold text-blue-600">S-Inspire Global</h1>
-                <p class="text-sm text-gray-600">Ventures Private Limited</p>
-            </div>
+            <a href="{% if page.url == '/' %}#hero{% else %}{{ assetsPath }}#hero{% endif %}" class="flex items-center gap-3">
+                <!-- Existing logo and text, now wrapped in the link -->
+                <img src="{% if page.url == '/' %}./{% else %}{{ assetsPath }}{% endif %}assets/images/logo.png" alt="Sinspire logo" class="h-12">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-600">S-Inspire Global</h1>
+                    <p class="text-sm text-gray-600">Ventures Private Limited</p>
+                </div>
+            </a>
         </div>
 
         <!-- Desktop Navigation -->

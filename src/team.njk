@@ -26,7 +26,7 @@
             <!-- Leader 1 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
+                    <img src="../assets/images/businessman.jpeg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -49,7 +49,7 @@
             <!-- Leader 2 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
+                    <img src="../assets/images/officer.jpeg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Anju PK </h3>
+                <h3 class="text-2xl font-bold mb-2">Pavitran </h3>
                 <p class="text-blue-500 font-medium mb-3">Chief Technology Officer</p>
                 <p class="text-gray-600">Driving technological innovation and digital transformation.</p>
             </div>
@@ -72,7 +72,7 @@
             <!-- Leader 3 -->
             <div class="group">
                 <div class="relative overflow-hidden rounded-2xl mb-6">
-                    <img src="../assets/images/businessman.jpg" alt="Team Leader" 
+                    <img src="../assets/images/man.jpeg" alt="Team Leader" 
                          class="w-full aspect-[4/5] object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-6 left-6 right-6">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Sarath KJ</h3>
+                <h3 class="text-2xl font-bold mb-2">Bijeesh ak</h3>
                 <p class="text-blue-500 font-medium mb-3">Chief Operations Officer</p>
                 <p class="text-gray-600">Managing operations and program implementation.</p>
             </div>
@@ -104,19 +104,15 @@
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- Team Member Card Template -->
             {% for member in [
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
-                {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'},
+                {name: 'Sarath KJ', role: 'Education Head', image: 'sarath.jpeg'},
+                {name: 'Anju', role: 'Education Head', image: 'lady.jpg'},
+                {name: 'Arunima', role: 'Education Head', image: 'lady2.jpeg'},
                 {name: 'Arun Kumar', role: 'Education Head', image: 'member1.jpg'}
               ]
                %}
             <div class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div class="relative mb-4 rounded-xl overflow-hidden">
-                    <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" 
+                    <img src="../assets/images/team/{{ member.image }}" alt="{{ member.name }}" 
                          class="w-full aspect-square object-cover transform group-hover:scale-110 transition duration-500">
                 </div>
                 <h3 class="text-lg font-bold mb-1">{{ member.name }}</h3>
